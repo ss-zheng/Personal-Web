@@ -1,0 +1,56 @@
+div.sidenav {
+	position: absolute;
+	background-color: #262626;
+	top: 8px;
+	text-align: center;
+	list-style-type: node;
+	margin: 10px 0px 10px 0px;
+	padding: 5px;
+	width: 100%;
+	position: fixed;
+	overflow: auto;
+}
+
+a {
+	text-align: center;
+	display: inline;
+	color: white;
+	font-size: 15px;
+	padding: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	padding: 8px 40px;
+	text-decoration: none;
+	margin: 2%;
+}
+
+
+div.sidenav a:hover:not(.active) {
+	text-decoration: line-through;
+}
+
+p.name {
+	position: absolute;
+	right: 8%;
+	color: white;
+	margin: 10px 30px;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+p {
+	position: absolute;
+	color: white;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+
+div.container p {
+	position: absolute;
+}
+
+

@@ -1,0 +1,51 @@
+ul.sidenav {
+	list-style-type: node;
+	margin: 0;
+	padding: 0;
+	width: 17%;
+	background-color: #000000;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+
+
+ul.sidenav li a {
+	display: block;
+	color: black;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+ul.sidenav li a.active {
+	color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+	color: white;
+}
+
+ul.sidenav li a.active {
+	color: white;
+}
+
+@media screen and (max-width: 1050px){
+    ul.sidenav {
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left:0;}
+}
+
+@media screen and (max-width: 400px){
+    ul.sidenav li a {
+        text-align: center;
+        float: none;
+    }
+}

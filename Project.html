@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Project</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<style>
+		
+		@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese);
+		@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese);
+		@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,latin-ext,greek-ext,greek,vietnamese,cyrillic,cyrillic-ext);
+
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url("img/background_project50%.jpg");
+			background-size: 100% auto;
+			background-color:  #999999;
+			background-attachment: fixed;
+		}
+
+		img.column1 {
+			position: absolute;
+			left: 200px;
+			top: -5px;
+			border:solid black 6px;
+			border-radius: 5px;
+		}
+
+		img.column2 {
+			position: absolute;
+			left: 830px;
+			top: -5px;
+			border:solid white 6px;
+			border-radius: 5px;
+		}
+
+		#project1{
+			position: absolute;
+			background-color: none;
+			top: 100px;
+			width: 100%;
+			height: 250px;
+			z-index: -1;
+		}
+
+		#project1_back{
+			position: absolute;
+			background-color: black;
+			top: 100px;
+			width: 100%;
+			height: 250px;
+			z-index: -2;
+			opacity: 0.8;
+		}
+
+		#project2{
+			position: absolute;
+			background-color: none;
+			top: 400px;
+			width: 100%;
+			height: 250px;
+			z-index: -1;
+		}
+
+		#project2_back {
+			position: absolute;
+			background-color: white;
+			top: 400px;
+			width: 100%;
+			height: 250px;
+			z-index: -2;
+			opacity: 0.8;
+		}
+
+		#project3{
+			position: absolute;
+			background-color: none;
+			top: 700px;
+			width: 100%;
+			height: 250px;
+			z-index: -1;
+		}
+
+		#project3_back {
+			position: absolute;
+			background-color: black;
+			top: 700px;
+			width: 100%;
+			height: 250px;
+			z-index: -2;
+			opacity: 0.8;
+		}
+
+		#project4{
+			position: absolute;
+			background-color: none;
+			top: 1000px;
+			width: 100%;
+			height: 250px;
+			z-index: -1;
+		}
+
+		#project4_back {
+			position: absolute;
+			background-color: none;
+			top: 1000px;
+			width: 100%;
+			height: 250px;
+			z-index: -2;
+			opacity: 0.8;
+		}
+
+		a.download1 {
+			position: absolute;
+			background-color: green;
+			border-radius: 5px;
+			width: 90px;
+			height: 20px;
+			left: 660px;
+			bottom: 15px;
+			margin:0;
+			padding:6px;
+		}
+
+		a.download2 {
+			position: absolute;
+			background-color: green;
+			border-radius: 5px;
+			width: 90px;
+			height: 20px;
+			left: 210px;
+			bottom: 15px;
+			margin:0;
+			padding:6px;
+		}
+
+		a.git1 {
+			position: absolute;
+			background-color: purple;
+			border-radius: 5px;
+			width: 90px;
+			height: 20px;
+			left: 800px;
+			bottom: 15px;
+			margin:0;
+			padding:6px;
+		}
+
+		a.git2 {
+			position: absolute;
+			background-color: purple;
+			border-radius: 5px;
+			width: 90px;
+			height: 20px;
+			left: 350px;
+			bottom: 15px;
+			margin:0;
+			padding:6px;
+		}
+
+
+
+		</style>
+	</head>
+	<body>
+	<div class="container">
+		<div class="sidenav">
+		<a class="nav_item" href="About.html">About</a>
+		<a class="nav_item" href="Article.html">Article</a>
+		<a class="nav_item" href="Blog.html">Blog</a>
+		<a class="nav_item" href="Project.html">Project</a>
+		<a class="nav_item" href="Contact.html">Contact</a>
+		</div>
+
+		<div id="project1">
+		<img class="column1" src="img/cc3k.jpg" alt="cc3k" border="0" width="400px" height="100%" />
+		<p style="left: 650px; width: 600px"><b>ChamberCrawler3000</b> 11/20/2016 - 12/5/2016<br><br>
+			Group Project <br><br>
+			Basic language: c++<br><br>
+			Intro: A simplified rogue-like video game, player need to reach 5<sub>th</sub> floor to win the game. The more enemies player slained, the much gold player gains, the higher the score is. (You need ncurse libary to run the game).
+		</p>
+
+		<a class="download1" href="123">Download</a>
+		<a class="git1" href="https://github.com/ss-zheng/ChamberCrawler3000">Github</a>
+
+		</div>
+		<div id="project1_back"></div>
+
+		<!--project2-->
+		<div id="project2">
+		<img class="column2" src="img/cc3k.jpg" alt="cc3k" border="0" width="400px" height="100%" />
+		<p style="color: black; left: 200px; width:600px"><b>MeetUp</b> 12/21/2016 - present<br><br>
+			Personal Project <br><br>
+			Basic language: HTML, CSS, JavaScript, JQuery, SQL<br><br>
+			Intro: A web that help people meet up at school, people can look up their friends' schedule to decide when to meet up with them. This web also benefits the group meeting for it can search for time when all group members are free.
+		</p>
+
+		<a class="download2" href="123">Link</a>
+		<a class="git2" href="123">Github</a>
+		</div>
+		<div id="project2_back"></div>
+
+		<!--project3-->
+		<div id="project3">
+		<img class="column1" src="img/per_web.jpg" alt="cc3k" border="0" width="440px" height="100%" />
+		<p style="left: 690px; width: 600px"><b>Personal Web</b> 12/21/2016 - 12/30/2016<br><br>
+			Personal Project <br><br>
+			Basic language: HTML, CSS, JavaScript, JQuery<br><br>
+			Intro: A personal web that provides some personal information, a practice of web development.
+		</p>
+
+		<a class="download1" style="left: 700px;" href="About.html">Link</a>
+		<a class="git1" style="left: 840px;" href="123">Github</a>
+
+		</div>
+		<div id="project3_back"></div>
+
+		<!--project3-->
+		<div id="project4">
+
+		</div>
+		<div id="project4_back"></div>
+
+	</div>
+	</body>
+</html>
