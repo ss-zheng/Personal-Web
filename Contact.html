@@ -12,10 +12,19 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background-image: url("img/background50%.png");
-			background-size: 100% auto;
-			background-color:  #999999;
+		}
+
+		.container {
+			background-image: url("img/contact.jpg");
 			background-attachment: fixed;
+			background-size: 100% auto;
+			position: fixed;
+ 			left: 0;
+  			right: 0;
+  			z-index: -1;
+
+  			width: 100%;
+  			height: 100%;
 		}
 
 		#contact {
@@ -23,38 +32,27 @@
 			width: 800px;
 			left: 300px;
 			top: 300px;
-			z-index: -1;
+			z-index: 0;
 		}
 
 		a[name="email"] {
-			position: absolute;
-			top: 280px;
-			left:5px;
-			margin:0;
-			padding:0;
-			border-radius: 5px;
-			border: solid white 5px;
-			background-color: white;
-			font-size: 2em;
-			font-weight: bold;
-			opacity: 0.8;
-			color: #aaa;
-			mix-blend-mode: screen;
+			text-align: left;
+			padding:0px;
+			font-size: 1.6em;
+			margin: 0px 0px 0px 0px; 
 		}
 
 		p {
-			background-color: white;
-			font-size: 2em;
-			font-weight: bold;
-			opacity: 0.8;
-			color: #aaa;
-			mix-blend-mode: screen;
+			overflow: hidden;
+			text-align: left;
+			padding: 0px;
+			margin: 0px 0px 0px 0px; 
 		}
 
 		</style>
 	</head>
 	<body>
-	<div class="container">
+		<div class="container"></div>
 		<div class="sidenav">
 		<a class="nav_item" href="About.html"">About</a>
 		<a class="nav_item" href="Article.html">Article</a>
@@ -64,11 +62,14 @@
 		</div>
 
 		<div id="contact">
-		<p>Home Address: 295A Lester St Unit 306A, Waterloo. ON, N2L0C1<br><br>
-			Cellphone: 6478365882<br><br>
-			UW ID: 20607069</p>
-		<a name="email" href="mailto: s47zheng@uwaterloo.ca">Email: s47zheng@uwaterloo.ca</a>
+		<p style="font-size: 2.5em; margin-left: 50px">Contact Me</p>
+		<hr style="color:white;">
+		<p style="font-size: 1.6em;">Home Address: 295A Lester St Unit 306A, Waterloo, ON. N2L0C1<br><br>
+			Cell: 6478365882<br><br>
+			UW ID: 20607069
+		</p>
+		<a name="email" href="mailto: s47zheng@uwaterloo.ca"><br> 
+			<p style="text-decoration: underline; font-size: 1em;">Email: s47zheng@uwaterloo.ca</p></a>
 		</div>
-	</div>
 	</body>
 </html>
