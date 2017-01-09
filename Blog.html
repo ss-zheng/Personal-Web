@@ -19,10 +19,10 @@
 		}
 
 		.blogs {
-			margin: 0;
 			padding: 0;
 			position: absolute;
 			margin: 7% 5% 5% 5%;
+			top: 500px;
 		}
 
 		.blog {
@@ -52,25 +52,70 @@
 			margin: 25px 25px 25px 30px;
 		}
 
+		img.mySlides {
+			margin: 0;
+		}
+
 		p {
 			text-align: center;
 			margin: 0px 30px 30px 30px;
 			color: black;
 		}
 
-		</style>
-		<script type="text/javascript">
-			function disappear(){
-				alert("I'm working"); 
-				alert("I'm still working");
-				var theInput = document.getElementsByTagName("test");
-				alert("123: " + theInput.type);
-			}
+		.gallery {
+			border-top: solid white 5px;
+			border-bottom: solid white 5px;
+			position: absolute;
+			margin: 0;
+			top: 13%;
+			width: 100%;
+			height: 400px;
+			overflow: hidden;
+			z-index: -1;
+		}
 
-		</script>
+		li {
+			display: inline;
+			
+		}
+
+		ul {
+			position: absolute;
+			margin: 0;
+			height: 100%;
+			left: -100px;
+		}
+
+		.text {
+			position: absolute;
+   			top: 300px;
+   			left: 200px;
+   			font-size: 2em;
+			background-color: rgba(255, 255, 255, 0.8);
+			overflow: hidden;
+			text-align: center;
+			font-size: 2em;
+			padding: 0px;
+			margin: 0px 0px 0px 0px; 
+			font-weight: bold;
+			color: #aaa;
+			mix-blend-mode: screen;
+		}
+
+		span {
+			padding: 6px 100px 6px 20px;
+			background: url("img/pano2.jpg");
+ 			 -webkit-text-fill-color: transparent;
+ 			 -webkit-background-clip: text;
+ 			 display: block;
+  			background-position: center -450px;
+		}
+
+		</style>
+		
+		
 	</head>
 	<body>
-	<div class="container">
 		<div class="sidenav">
 		<a class="nav_item" href="About.html"">About</a>
 		<a class="nav_item" href="Article.html">Article</a>
@@ -140,9 +185,42 @@
 			</div>
 			<div class="blog_back" style="top: 1000px; opacity: 0;"></div>
 
-			
-
 		</div>
-	</div>
+		<div class="gallery">
+			<ul>
+ 			 	<li class="slides">
+					  <img class="mySlides" src="img/pano1.jpg" height="400px">
+					  <p class="text"><span>Havana Cuba 12/28/2016</span></p>
+				</li>
+  			    <li class="slides">
+					  <img class="mySlides" src="img/pano2.jpg" height="500px">
+					  <p class="text"><span>Varadero Cuba 12/28/2016</span></p>
+					 
+				</li>
+  			    <li class="slides">
+					  <img class="mySlides" src="img/pano3.jpg" height="400px">
+					  <p class="text"><span>Tibet China 4/13/2015</span></p>
+					  
+				</li>
+			</ul>
+		</div>
+
+		<script type="text/javascript">
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+    			var i;
+    			var x = document.getElementsByClassName("slides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+    			}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+    				x[myIndex-1].style.display = "block";  
+   					 setTimeout(carousel, 3000);
+				}	
+		</script>
+
 	</body>
 </html>
